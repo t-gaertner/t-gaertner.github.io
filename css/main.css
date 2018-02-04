@@ -4,6 +4,7 @@ body {
     width: 70%;
     color: #23373b; 
     background-color: #FEFEFE;
+  font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, arial, sans-serif;
 }
 nav ul, footer ul {
     padding: 0px;
