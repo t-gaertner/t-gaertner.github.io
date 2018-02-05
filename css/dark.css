@@ -1,14 +1,16 @@
 :root{
   --teal: #23373b;
-  --whitish: #FEFEFE; 
+  --whiteish: #FEFEFE; 
+  --orange: #EB811B;
+  --otherteal: #205550;
 }
 
-body {
+body, p {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     margin: 60px auto;
     width: 70%;
-    color: var(--teal); 
-    background-color: var(--whiteish);
+    color: var(--whiteish); 
+    background-color: var(--teal);
   font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, 'segoe ui', 'helvetica neue', helvetica, ubuntu, roboto, noto, arial, sans-serif;
 }
 nav ul, footer ul {
@@ -22,7 +24,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #205550;
+    color: var(--orange);
 }
 a:hover {
     text-decoration: underline;
