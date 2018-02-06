@@ -2,8 +2,18 @@
     var tmp;
     function dark() {
          document.getElementById("style").href="/css/dark.css";
+         sessionStorage.setItem('bg', "dark");
     }
     function light() {
          document.getElementById("style").href="/css/main.css";
+         sessionStorage.setItem('bg', "light");
     }
+    function magic() {
+          if (sessionStorage.getItem('bg') == "dark" ) {
+             dark();
+          } else if(sessionStorage.getItem('bg') == "light" ) {
+             light();
+          }
+    }
+    magic()
     </script>
