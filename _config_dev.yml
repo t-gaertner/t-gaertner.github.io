@@ -26,7 +26,7 @@ github_username:  t-gaertner
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
+plugins: ['jekyll/scholar']
 #  - jekyll-feed
 
 # Exclude from processing.
@@ -41,3 +41,29 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 permalink: /blog/:year/:month/:day/:title
+
+
+scholar:
+  style: apa
+  locale: en
+
+  sort_by: year
+  order: descending
+
+  group_by: none
+  group_order: ascending
+
+  source: ./_bibliography
+  bibliography: someofmine.bib
+  bibliography_template: ""
+
+  replace_strings: true
+  join_strings:    true
+
+  use_raw_bibtex_entry: true
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  query: "@*"
