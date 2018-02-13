@@ -53,10 +53,10 @@
   <macro name="title">
     <choose>
       <if type="bill book graphic legal_case legislation motion_picture report song thesis" match="any">
-        <text variable="title" font-style="italic"/>
+        <text variable="title" font-style="italic" font-weight="bold"/>
       </if>
       <else>
-        <text variable="title"/>
+        <text variable="title" font-weight="bold"/>
       </else>
     </choose>
   </macro>
@@ -97,7 +97,6 @@
     </group>
   </macro>
   <macro name="DOI">
-    <text variable="DOI" prefix=" DOI:https://doi.org/"/>
   </macro>
   <citation et-al-min="3" et-al-use-first="1" disambiguate-add-year-suffix="true" disambiguate-add-names="true" disambiguate-add-givenname="true">
     <layout prefix="[" suffix="]" delimiter="; ">
@@ -180,7 +179,6 @@
             <group prefix=" ">
               <text variable="volume"/>
               <text variable="issue" prefix=", "/>
-              <date date-parts="year-month" form="text" variable="issued" prefix=" (" suffix=")"/>
             </group>
             <group prefix=", ">
               <text variable="page"/>
