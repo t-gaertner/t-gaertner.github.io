@@ -15,7 +15,7 @@ title: Papers
 
 {% bibliography --file workshops.bib %}
 
-## Book Chapters
+## Book Chapters (incomplete)
 
 {% bibliography -q @incollection --file other.bib %}
 
