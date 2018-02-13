@@ -2,7 +2,7 @@
 layout: entitled
 title: Papers
 ---
-## Scientific Articles in Journal and Top Conferences
+## Scientific Articles in Journals and Top Conferences
 
 {% bibliography  %}
 
