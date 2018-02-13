@@ -44,7 +44,9 @@ permalink: /blog/:year/:month/:day/:title
 
 
 scholar:
-  style: apa
+  style: _bibliography/mystyle.csl
+#  style: _bibliography/acm-sigchi-proceedings.csl
+#  style: apa 
   locale: en
 
   sort_by: year
@@ -54,7 +56,8 @@ scholar:
   group_order: ascending
 
   source: ./_bibliography
-  bibliography: someofmine.bib
+#  bibliography: "*.bib"
+  bibliography: confjrnl.bib
   bibliography_template: ""
 
   replace_strings: true
