@@ -1,11 +1,11 @@
     <script>
     var tmp;
     function dark() {
-         document.getElementById("style").href="{{'css/dark.css' | prepend: site.baseurl }}" ;
+         document.getElementById("style").href="{{'/css/dark.css' | prepend: site.baseurl }}" ;
          sessionStorage.setItem('bg', "dark");
     }
     function light() {
-         document.getElementById("style").href="{{'css/main.css' | prepend: site.baseurl }}";
+         document.getElementById("style").href="{{'/css/main.css' | prepend: site.baseurl }}";
          sessionStorage.setItem('bg', "light");
     }
     function magic() {
